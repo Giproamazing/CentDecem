@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterious Disappearance</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #content {
+            max-width: 90%;
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+        .hidden {
+            display: none;
+        }
+        .camouflage {
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>13, DECEM, 1970</h1>
+        <p>We had a mysTerious disappearance of willam yesterday and a lot of people went to <span id="oregon" class="camouflage">OREGON</span> and went missing. We don't understand wHat is happEning. One survived, came back from OREGON forest saying, "i s..sa..saw it with my own Di..gl.digle...do..don..dong eyes. i ..i don't wanna gooo.go..og there ever again." This Unpleasant news sacred everyone, and we will be closIng the area down.</p>
+    </div>
+
+    <div id="cipher-text" class="hidden">
+        <h1>126497322194322831669751546451</h1>
+        <p>Ghubk cuxj oy g zghrk. Znk ktzoxk sgxqkz ngy ingtmkj znk bgrak ul znkox vxoik zujge haz gryu ruuqy roqk znoy vrgik ngy suxk iuxjc GTJ CORR HK IUUR ZU GLLUXJ ZNK SYXQKZ gtj gryu mtozzav Zuj sui ot znk ktj corr ygbk eua.</p>
+    </div>
+
+    <script>
+        document.getElementById('oregon').addEventListener('click', function() {
+            document.getElementById('content').classList.toggle('hidden');
+            document.getElementById('cipher-text').classList.toggle('hidden');
+        });
+
+        // Anti-inspect element trick
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
